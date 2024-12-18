@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Headland+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Headland+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cedarville+Cursive&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Headland+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cedarville+Cursive&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Headland+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+}
+
+.company {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+}
+.color {
+  background-color: #006cb5;
+}
+
+.back {
+  font-size: 25px;
+  font-family: "Cormorant", Garamond Static;
+  font-weight: 400;
+  font-style: italic;
+  color: #f9f9f9;
+}
+
+.mission {
+  color: #006cb5;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+.mission-content {
+  margin-left: -230px;
+}
+.missi {
+  font-size: 25px;
+  color: #0f5e75fe;
+}
+.viss {
+  color: #006cb5;
+}
+.vision {
+  font-size: larger;
+  font-family: IBM Plex Serif Static;
+}
+.img-custom {
+  height: 250px; /* Set the desired height */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  width: 100%; /* Set width to 100% to fill the card */
+}
+.foot {
+  background-color: #006cb5;
+}
+.heading {
+  color: #006cb5;
+  font-family: "Headland One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.par {
+  font-size: larger;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: black;
+}
+
+.col {
+  background-color:#D3D3D3;
+}
+
+.full-screen-gif {
+  width: 100%; /* Make the GIF fill the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for styling */
+  padding: 10px;
+  text-align: center;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+ 
+}
+.line {
+  font-family: "Headland One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.img {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: black;
+}
+
+
+hr {
+  border: 2px solid #f9f9f9;
+  width: 30%;
+}
+
+/* Styling for the dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li {
+  font-weight: 300;
+  font-size: larger;
+  font-family: "Ubuntu", sans-serif;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.services {
+  font-family: "Ubuntu", sans-serif;
+}
+.contact {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.link {
+  font-family: "Ubuntu", sans-serif;
+}
+.indus {
+  border: 2px solid black;
+  width: 30%;
+}
+.miss {
+  border: 2px solid #006cb5;
+  width: 30%;
+}
+
+/* Vertical line styling */
+.vertical-line {
+  border: none; /* No border */
+  height: 100%; /* Full height */
+  margin-top: 45px; /* Top margin */
+  background: linear-gradient(
+    to bottom,
+    #0991a9 65%,
+    #333 65%
+  ); /* Gradient from dark blue to dark grey */
+  width: 30px; /* Adjust the width to your desired thickness */
+}
+
+h3,
+h5 {
+  margin-top: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .mission-content {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center; /* Example adjustment for smaller screens */
+    margin-left: 10px; /* This is okay as is */
+  }
+
+  .vertical-line {
+    margin-top: -3px; /* Ensure this is intended */
+    margin-left: 2px; /* Adjust as necessary */
+  }
+
+  .log {
+    padding: 5px;
+  }
+
+  .text3 {
+    position: relative;
+    top: -11px;
+    margin-left: 91px;
+    color: #006cb5;
+    font-size: 19px;
+  }
+  .text1 {
+    position: relative;
+    top: -19px;
+    margin-left: 91px;
+    color: #333;
+    left: -9px;
+    font-size: 17px;
+  }
+  .text {
+    position: relative;
+    top: -27px;
+    margin-left: 70px;
+    left: -10px;
+    color: #333;
+    font-size: 15px;
+  }
+  .truck {
+    position: relative;
+    top: -5px;
+    left: 45px;
+    max-width: 300px;
+    height: 250px;
+    margin-top: -100px;
+  }
+
+  .bt {
+    position: relative;
+    left: 50px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+  }
+ 
+}
+
+@media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  /* Your styles here */
+  .bt{
+    position: relative;
+    left: 85px;
+  }
+  .logo{
+    position: relative;
+    left: 35px;
+    padding: auto;
+  }
+  .video{
+    height: 910px;
+  }
+}
+
+ 
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .mission-content {
+    padding: 10px;
+    font-size: 14px; /* Consider changing this for desktop if needed */
+    text-align: center; /* Example adjustment for desktop screens */
+    margin-left: 10px; /* This is okay as is */
+  }
+
+  .vertical-line {
+    border: none; /* No border */
+    height: 100%; /* Full height */
+    margin-top: 45px; /* Top margin */
+    background: linear-gradient(
+      to bottom,
+      #0991a9 55%,
+      #333 55%
+    ); /* Gradient from dark blue to dark grey */
+    width: 11px; /* Ensure to close comment */
+    margin-top: -3px; /* Ensure this is intended */
+    margin-left: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .log {
+    padding: -65px;
+  }
+  .text3 {
+    position: relative;
+    left: -15px;
+    color: #006cb5;
+  }
+  .text1 {
+    position: relative;
+    top: -5px;
+    left: -25px;
+    color: #333;
+  }
+  .text {
+    position: relative;
+    top: -9px;
+    left: -69px;
+    color: #333;
+  }
+  .truck {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    left: 450px;
+  }
+}
+
+/* about us page */
+
+.about {
+  background-color: #0c43aa;
+}
+/* for font */
+.aboutp {
+  font-family: "Headland One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* for desktop */
+@media (min-width: 769px) {
+  .log2 {
+    max-width: 300px;
+    position: relative;
+    left: 200px;
+  }
+
+  .about1 {
+    position: relative;
+    left: 100px;
+  }
+
+  .about2 {
+    position: relative;
+    left: 90px;
+  }
+
+  .about3 {
+    position: relative;
+    left: 80px;
+  }
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+  .log2 {
+    padding: -50px;
+    width: 250px;
+    position: relative;
+    left: 50px;
+  }
+
+  .about1 {
+    position: relative;
+    left: 50px;
+  }
+
+  .about2 {
+    position: relative;
+    left: 50px;
+  }
+
+  .about3 {
+    position: relative;
+    left: 50px;
+  }
+
+  /* truck */
+  .truck {
+    margin-top: 15px;
+    margin-left: 2px;
+  }
+}
+
+/* ORG */
+
+.box1 {
+  border: 2px solid #006cb5;
+  margin-top: 45px;
+}
+
+.box2 {
+  border: 2px solid #006cb5;
+}
+
+.box3 {
+  border: 2px solid #006cb5;
+}
+
+.space {
+  padding-top: 150px;
+}
+
+.grey {
+  color: grey;
+}
+
+.fonto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: 500;
+}
+
+.colon {
+  font-size: 25px;
+  color: #006cb5;
+}
+
+/* for desktop */
+@media (min-width: 769px) {
+  .box1 {
+    width: 1100px;
+    position: relative;
+    left: 100px;
+    top: 25px;
+  }
+
+  .box2 {
+    width: 650px;
+    position: relative;
+    left: -35px;
+    top: 100px;
+    padding: 10px;
+  }
+
+  .box3 {
+    width: 650px;
+    position: relative;
+    left: 695px;
+    top: -165px;
+  }
+
+  .vid {
+    position: relative;
+    top: 1px;
+    left: 450px;
+    width: 100%;
+  }
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+  .box2 {
+    margin-top: 25px;
+  }
+
+  .box3 {
+    margin-top: 25px;
+  }
+  .space {
+    padding-top: 3px;
+  }
+}
+/* vid */
+.vid {
+  position: relative;
+  left: -10px;
+  width: -300px;
+}
+
+/* service */
+
+.image-container {
+  margin-top: 75px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+  .image-container {
+    margin-top: 15px;
+  }
+}
+
+/* for contact US */
+/* From Uiverse.io by aboalsim114 */
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #0077be, #3b8df2);
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  animation: form-animation 0.5s ease-in-out;
+}
+
+@keyframes form-animation {
+  from {
+    transform: rotateX(-30deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  color: rgb(255, 255, 255);
+  border: 2px solid #3b8df2;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.input:hover,
+.input:focus {
+  border-color: #3b8df2;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05) rotateY(20deg);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3b8df2;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateX(-10deg);
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+  background-color: #0077be;
+  font-size: 17px;
+  transform: scale(1.05) rotateY(20deg) rotateX(10deg);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* for desktop */
+@media (min-width: 769px) {
+  form {
+    position: relative;
+    top: 100px;
+    left: 350px;
+  }
+
+  .home {
+    position: relative;
+    top: -5px;
+    left: 370px;
+  }
+
+  .company {
+    position: relative;
+    top: 29px;
+    left: 470px;
+  }
+
+  .icon {
+    position: relative;
+    left: -10px;
+    top: -1px;
+    color: #006cb5;
+  }
+
+  .icon1 {
+    position: relative;
+    left: -10px;
+    top: -1px;
+    color: #006cb5;
+  }
+
+  .fot {
+    height: 210px;
+    position: relative;
+    top: 50px;
+  }
+
+  .ins {
+    position: relative;
+    left: -165px;
+  }
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+  form {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+
+  .icon {
+    position: relative;
+    left: -10px;
+    top: -1px;
+    color: #006cb5;
+  }
+
+  .icon1 {
+    position: relative;
+    left: -10px;
+    top: -1px;
+    color: #006cb5;
+  }
+
+  .fot {
+    height: 210px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+  }
+
+  .ins {
+    position: relative;
+    left: -145px;
+  }
+.log7{
+    position: relative;
+    left: -100px;
+    padding: -1000px;
+}
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
